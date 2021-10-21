@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @RestController
 public class HelloController {
-    @Value("${provider.name}")
+    @Value("${my.provider.name}")
     private String name;        // 服务提供者名称
     @Value("${server.port}")
     private String port;        // 服务提供者端口号

@@ -7,7 +7,8 @@ import org.springframework.web.bind.annotation.RequestMapping;
  * @author lmmarise.j@gmail.com
  * @since 2021/10/21 12:35 上午
  */
-@FeignClient(name = "provider")
+@FeignClient(name = "provider")     // name 指向服务提供者在注册中心的名字，而其名字就是 spring.application.name
+// 多个提供者在服务中心有相同的名字将组成集群
 public interface MyFeignClient {
 
     @RequestMapping(value = "/hello")
