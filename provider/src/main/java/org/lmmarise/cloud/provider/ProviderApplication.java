@@ -9,7 +9,7 @@ import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
  * @since 2021/10/21 12:57 上午
  */
 @SpringBootApplication
-@EnableDiscoveryClient  // 客户端服务注册和发现功能
+@EnableDiscoveryClient  // 服务发现
 public class ProviderApplication {
 
     public static void main(String[] args) {
