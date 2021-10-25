@@ -2,6 +2,7 @@ package org.lmmarise.cloud.consumer;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.openfeign.EnableFeignClients;
 
 /**
  * @author lmmarise.j@gmail.com
@@ -10,7 +11,7 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 @SpringBootApplication
 /*切到consul*/
 //@EnableDiscoveryClient//(autoRegister = false)    // 让服务中心发现、扫描到服务
-//@EnableFeignClients
+@EnableFeignClients
 public class ConsumerApplication {
 
     public static void main(String[] args) {

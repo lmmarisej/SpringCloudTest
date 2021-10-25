@@ -4,6 +4,7 @@ import org.lmmarise.cloud.consumer.feign.client.MyFeignClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -15,7 +16,7 @@ public class ConsumerController {
     @Autowired
     private MyFeignClient myFeignClient;
 
-    @RequestMapping("/hello")
+    @GetMapping("/hello1")
     public String index() {
         String hello = myFeignClient.hello();
         System.out.println("服务消费者：" + Thread.currentThread().getName());
