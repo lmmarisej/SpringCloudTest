@@ -8,6 +8,7 @@ import org.springframework.stereotype.Component;
  */
 @Component
 public class MyFeignClientImpl implements MyFeignClient {
+
     @Override
     public String hello() {
         return "出现错误";
