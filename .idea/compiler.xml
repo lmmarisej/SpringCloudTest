@@ -12,5 +12,8 @@
         <module name="gateway" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="zipkin" target="11" />
+    </bytecodeTargetLevel>
   </component>
 </project>
