@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="registry" />
+        <module name="config-server" />
         <module name="provider" />
         <module name="consumer" />
         <module name="gateway" />
