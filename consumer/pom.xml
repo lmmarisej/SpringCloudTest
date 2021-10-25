@@ -41,6 +41,7 @@
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter-consul-discovery</artifactId>
         </dependency>
+
         <!--hystrix可视化监控-->
         <dependency>
             <groupId>org.springframework.cloud</groupId>
@@ -55,6 +56,12 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
+        </dependency>
+
+        <!--聚合多个服务实例进行监控-->
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-netflix-turbine</artifactId>
         </dependency>
     </dependencies>
 
